@@ -24,8 +24,7 @@ a{
 }
 .nav{
     width: 100wh;
-    padding: 0 40px;
-    margin: 0 auto;
+    margin: 0 0 10px 0;
     
 }
 .nav-box{
@@ -35,7 +34,7 @@ a{
     display: flex;
     align-items: center;
     padding: 0;
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
 }
 .nav-box> ul{
     display: flex;
@@ -139,7 +138,7 @@ a{
 }
 /* -----------------section hero------------------ */
 .hero-section{
-    width: 1600px;
+    width: 1500px;
     padding: 0 40px;
     margin: 0 auto;    
 }
@@ -203,7 +202,7 @@ a{
     width: 1680px;
     padding: 120px 80px;
     margin: 0 auto;
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
     box-sizing: border-box;
     
 }
@@ -251,11 +250,11 @@ a{
 }
 /* -----------------example--------------------- */
 .example{
-    padding: 80px 80px;
+    padding: 0;
 }
 .first-comtainer{
     display: flex;
-    padding: 0 0 80px 0;
+    padding: 80px;
 }
 .right-box{
     width: 750px;
@@ -270,7 +269,8 @@ a{
 }
 .second-container{
     display: flex;
-    padding: 80px 0 0 0;
+    padding: 80px;
+    background: #F5F5F5;
 }
 .left-box{
     width: 750px;
@@ -314,6 +314,7 @@ a{
 .contactus{
     padding: 120px 80px;
     display: flex;
+    background: #F5F5F5;
 }
 .button{
     margin-left: 80px;
