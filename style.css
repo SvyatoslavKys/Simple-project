@@ -20,11 +20,15 @@ li{
 }
 a{
     text-decoration: none;
-    color: 18A0FB;
+    color: #18A0FB;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.3;
 }
 .nav{
-    width: 100wh;
-    margin: 0 0 10px 0;
+    /* width: 100wh; */
+    margin: 10px 0 10px 0;
     
 }
 .nav-box{
@@ -157,13 +161,14 @@ a{
     font-weight: 400;
     font-size: 56px;
 }
+
 .hero-btn{
     display: inline-block;
     text-align: center;
     min-width: 192px;
     color: white;
     background: #2196f3;
-    /* background: white; */
+  
     padding: 15px;
     border: 1px solid #2196f3;
     border-radius: 6px;
@@ -172,6 +177,7 @@ a{
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    cursor: pointer;
 
 }
 .hero-btn:hover{
@@ -207,16 +213,18 @@ a{
     
 }
 .snap-photo>h2{
-    margin: 0 0 32px 0;
+    margin: 0 0 32px 10px;
+    font-size: 40px;
+    font-weight: 400;
 }
 .container>.item-list{
     display: flex;
     flex-wrap: wrap;
     gap: 108px;
 }
-.snap-photo>h2{
+/* .snap-photo>h2{
     padding: 0 10px;
-}
+} */
 .snup-btn{
     min-width: 130px;
     display: inline-block;
@@ -235,7 +243,7 @@ a{
     color: aliceblue;
 }
 .no-margin-left{
-    margin: 0 0 0 0;
+    margin-left: 0;
 }
 
 .item-list>li{
@@ -263,6 +271,9 @@ a{
     flex-direction: column;
     justify-content: center;
 
+}
+.right-box>h3{
+    margin: 0 0 24px 0;
 }
 .left-box>h3{
     margin: 0 0 24px 0;
@@ -324,4 +335,148 @@ a{
 }
 .btn-box{
     margin-left: 84px;
+    display: flex;
+    align-items: center;
+    
+}
+/* ----------------footer--------------------------- */
+.top-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.top-footer>ul>li>a{
+    color: #000;
+    transition: 500ms ease-in-out;
+}
+.top-footer>ul>li>a:hover{
+    color: #18A0FB;
+}
+.bottom-footer{
+    text-align: center ;
+}
+.bottom-footer>ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+.footer-link{
+    display: flex;
+    gap: 100px;
+}
+.footer-copy{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.line-footer{
+    border-bottom: 2px solid #000 ;
+}
+
+.logo-footer{
+    margin: 0 70px 0 0;
+    cursor: pointer;
+    font-size: 28px;
+    line-height: 1.33;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 400;
+    color: black;
+    transition: 500ms ease-in-out;
+}
+.logo-footer:hover{
+    color: #2196f3;
+}
+/* -------------------modal---------------------------- */
+.beckdrop{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #191c2688;
+    transition: 300ms;
+   
+}
+
+.modal{
+    position: absolute;
+    width: 1200px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50% , -50% );
+    transition: 300ms;
+    border-radius: 4px;
+    padding: 120px;   
+    text-align: center;
+}
+.input-box{
+    padding: 64px;
+    border: 2px solid rgba(0, 0, 0, 0.672);
+}
+
+
+.modal-close{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #FF6C00;
+    cursor: pointer;
+    right: 10px;
+    top: 10px;
+    background-color: none;
+    transition: 300ms;
+    
+}
+
+.modal-close:hover {
+    color: white;
+    background-color: #18A0FB;
+   
+} 
+
+.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transform: rotate(360);
+}
+.modal-title{
+    margin: 0 0 30px 0;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+
+}
+.modal-discript{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 0 80px 0;
+}
+.form-input{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #FF6C00;
+    background: transparent;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.input-box>p{
+    text-align: start;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+}
+.name-box{
+    display: flex;
+    gap: 20px;
+}
+ form>.no-margin-left{
+ margin-left: 0;
 }

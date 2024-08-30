@@ -7,13 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <section class="nav">
         <nav class="nav-box">
-            <a><img src="./image/Union.png" alt="logo">Photo</a>
+            <a><img src="./image/Union.png" alt="logo"> Photo</a>
             <ul>
                 <li><a href="" class="link-nav">Features</a></li>
                 <li><a href="" class="link-nav">Pricing</a></li>
@@ -22,7 +22,7 @@
             </ul>
             <ul>
                 <li><a href="" class="button">Log in</a></li>
-                <li><a href="" class="button link-nav-akcent">Register</a></li>
+                <li><a href="" class="button link-nav-akcent" data-modal-open>Register</a></li>
             </ul>
         </nav>
     </section>
@@ -104,6 +104,56 @@
             </div>
         </div>
     </section>
-    
+    <footer>
+    <div class="container">
+        <div class="top-footer">
+        <ul class="footer-link">
+            <li><a href="">Mobile app</a></li>
+            <li><a href="">Community</a></li>
+            <li><a href="">Company</a></li>
+        </ul>
+        <a class="logo-footer"><img src="./image/Union.png" alt="logo"> Photo</a>
+        <ul class="footer-link">
+            <li><a href="">Help desk</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Resources</a></li>
+        </ul>
+        </div>
+        <div class="line-footer">
+
+        </div>
+        
+        <div class="bottom-footer">
+        <ul>
+            <li><img src="./image/Ellipse.png" alt="holger"></li>
+            <li><img src="./image/Ellipse.png" alt="holder"></li>
+            <li><img src="./image/Ellipse.png" alt="holder"></li>
+            <li><img src="./image/Ellipse.png" alt="holder"></li>
+        </ul>
+        <p class="footer-copy">&copy; Photo, Inc. 2019. We love our users!</p>
+    </div>
+    </div>
+    </footer>
+    <div class="beckdrop is-hidden" data-modal>
+        <div class="modal">
+           <button type="button" class="modal-close" data-modal-close>X</button>
+           <p class="modal-title">Ready to take a free trial?</p>
+           <p class="modal-discript" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+           <div class="input-box">
+            <p>Sign up for a free account</p>
+           <form action="">
+            <div class="name-box">
+               <input type="text" class="form-input">
+               <input type="text" class="form-input">
+            </div>
+                <input type="email" class="form-input">
+               <input type="password" class="form-input">
+               <button type="submit" class="button link-nav-akcent no-margin-left" >Register</button>
+           </form>
+        </div>
+        </div>
+      </div>
+      <script src="./modalSkrypt-1.js">
+    </script>
 </body>
 </html>
